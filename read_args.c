@@ -31,7 +31,7 @@ int token_num(char *str, char *delim)
 
 /**
  * tokenize - tokenize a given string
- * @string: a string to tokinize
+ * @string: a string to tokinize (pointer)
  *
  * Return: double pointer to an array of strings
  */
@@ -68,7 +68,7 @@ char **tokenize(char *string)
 
 /**
  * get_args - splits the strings from user input.
- * @line: line passed to the program.
+ * @line: pointer to the line passed to the program.
  *
  * Return: A struct containing the command and arguments
  */
