@@ -31,3 +31,14 @@ void Print_env(full_cmd c)
 	free(c.cmd);
 }
 
+/**
+ * sh_exit - Handles the `exit` comman.
+ * @c: strct of the comand
+ * Return: nothing (void)
+ */
+
+void sh_exit(full_cmd c)
+{
+        _free(c.Gline, c.args, NULL);
+        exit(0);
+}
