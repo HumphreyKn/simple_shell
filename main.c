@@ -35,6 +35,7 @@ int main(int __attribute__((unused)) ac, char **av)
 				free(c.cmd);/* free the memory */
 			}
 		}
+		/** Lets free the memory of the arguments */
 		_free(c.args, line, NULL);
 	}
 	return (0);
