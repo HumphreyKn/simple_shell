@@ -39,6 +39,6 @@ void Print_env(full_cmd c)
 
 void sh_exit(full_cmd c)
 {
-        _free(c.Gline, c.args, NULL);
-        exit(0);
+	_free(c.Gline, c.args, NULL);
+	exit(0);
 }
